@@ -40,10 +40,15 @@ to produce the output image:
 <img src="examples/output_image.png" width="32" height="32">
 <br>
 
-You can also create the matrix from the image using the --imgmat option:
+You can also create the matrix from the image using the --imgmat option (assuming the image file already exists):
 ``` 
 matimg.py -m input_matrix.txt -i output_image.png --imgmat
 ```
+
+You may import the script as a module to use its functions.
+```matrix_to_image(matrix_path, image_path)``` takes the matrix at matrix_path and outputs the converted image to image_path.
+```image_to_matrix(matrix_path, image_path)``` uses the image at image_path and outputs a matrix representation of the image at matrix_path.
+```image_to_list(image_path)``` this method takes data from the image at image_path and returns a matrix represented by nested lists where each inner list represents a row.
 
 ## Requirements
 
