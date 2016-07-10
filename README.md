@@ -19,6 +19,11 @@ The default behaviour of the script is to read the matrix text file and output a
 
 Type ```matimg.py -h``` to display these instructions.
 
+You may import the script as a module to use its functions.
+```matrix_to_image(matrix_path, image_path)``` takes the matrix at matrix_path and outputs the converted image to image_path.
+```image_to_matrix(matrix_path, image_path)``` uses the image at image_path and outputs a matrix representation of the image at matrix_path.
+```image_to_list(image_path)``` this method takes data from the image at image_path and returns a matrix represented by nested lists where each inner list represents a row.
+
 ##Examples
 The script accepts a matrix where each line represents a row and each number belongs to a column respective to its position on the line. The matrix must be saved as plain text file with spaces seperating the entries in eaach line. The only acceptable entries are 1 and 0.
 
@@ -45,10 +50,6 @@ You can also create the matrix from the image using the --imgmat option (assumin
 matimg.py -m input_matrix.txt -i output_image.png --imgmat
 ```
 
-You may import the script as a module to use its functions.
-```matrix_to_image(matrix_path, image_path)``` takes the matrix at matrix_path and outputs the converted image to image_path.
-```image_to_matrix(matrix_path, image_path)``` uses the image at image_path and outputs a matrix representation of the image at matrix_path.
-```image_to_list(image_path)``` this method takes data from the image at image_path and returns a matrix represented by nested lists where each inner list represents a row.
 
 ## Requirements
 
